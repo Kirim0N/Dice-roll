@@ -2,15 +2,15 @@ using UnityEngine;
 
 public class CubeRoller : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [SerializeField] private Rigidbody cube;
 
-    // Update is called once per frame
-    void Update()
+    void Awake()
     {
-        
+        Roll(cube);
+    }
+    private void Roll(Rigidbody cube)
+    {
+        cube.AddForce(Random.Range(0,3), Random.Range(0,3), Random.Range(0,3), ForceMode.Impulse);
+        cube.AddTorque(Random.Range(0,3), Random.Range(0,3), Random.Range(0,3), ForceMode.Impulse);
     }
 }
