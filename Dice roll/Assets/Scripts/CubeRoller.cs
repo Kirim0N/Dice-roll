@@ -10,7 +10,7 @@ public class CubeRoller : MonoBehaviour
     }
     private void Roll(Rigidbody cube)
     {
-        cube.AddForce(Random.Range(-50,50), Random.Range(-50,50), Random.Range(-50,50), ForceMode.Impulse);
-        cube.AddTorque(Random.Range(-50,50), Random.Range(-50,50), Random.Range(-50,50), ForceMode.Impulse);
+        cube.AddForce(Random.Range(-1000,1000), Random.Range(-1000,1000), Random.Range(-1000,1000), ForceMode.Impulse);
+        cube.AddTorque(Random.Range(-100,100), Random.Range(-100,100), Random.Range(-100,100), ForceMode.Impulse);
     }
 }
