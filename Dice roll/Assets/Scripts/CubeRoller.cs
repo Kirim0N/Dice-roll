@@ -3,8 +3,8 @@ using UnityEngine;
 public class CubeRoller : MonoBehaviour
 {
     [SerializeField] private Rigidbody cube;
-    [SerializeField] private float maxForce;
-    [SerializeField] private float maxTorque;
+    [Range(0, 1000)][SerializeField] private float maxForce;
+    [Range(0, 100)][SerializeField] private float maxTorque;
 
     void Awake()
     {
