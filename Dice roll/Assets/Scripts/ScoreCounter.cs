@@ -45,14 +45,14 @@ public class ScoreCounter : MonoBehaviour
 
     private void CheckSide(GameObject cube, List<Collider> sideList, Collider floorCollider)
     {
-        var number = 0;
-        foreach (var side in sideList)
-        {
-            if (side.IsTrigger(floorCollider))
-            {
-                SideValueDict.TryGetValue(side, out number);
-                Debug.Log(number);
-            }
-        }
+        //var number = 0;
+        //foreach (var side in sideList)
+        //{
+        //    if (side.IsTrigger(floorCollider))
+        //    {
+        //        SideValueDict.TryGetValue(side, out number);
+       //         Debug.Log(number);
+       //     }
+        //}
     }
 }
