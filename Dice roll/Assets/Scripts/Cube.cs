@@ -34,7 +34,7 @@ public class Cube : MonoBehaviour
             numberOfStop++;
         }
         
-        if (numberOfStop == 2)
+        if (numberOfStop > 1)
         {
             // OnDiceStoppedEvent();
             ValueStablished.Invoke();
@@ -44,7 +44,6 @@ public class Cube : MonoBehaviour
 
     private void OnTriggerEntered(Face face)
     {
-        CurrentValue = face.Value;
+        CurrentValue = 7 - face.Value;
     }
-    
 }

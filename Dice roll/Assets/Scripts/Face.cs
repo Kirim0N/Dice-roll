@@ -9,7 +9,7 @@ public class Face : MonoBehaviour
 
     public UnityEvent<Face> TriggerEntered;
 
-    private void OnTriggerEnter(Collider other)
+    public void TriggerEnter()
     {
         TriggerEntered.Invoke(this);
     }
