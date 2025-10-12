@@ -12,7 +12,7 @@ public class EventDiceStopManager : MonoBehaviour
 	public delegate void DiceStopped();
 	public static event DiceStopped OnDiceStoppedEvent;
 
-    void FixedUpdate()
+    private void Update()
     { 
         if (cubeRigidbody.linearVelocity.magnitude == 0.0f)
         {
